@@ -1,0 +1,8 @@
+.nav-style{
+  display: inline;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: aqua;
+  background-color: brown;
+  height: 100px;
+}

@@ -23,7 +23,7 @@ class AuthService {
   }
   
   logout = () => {
-    return this.service.post('/logout', {})
+    return this.service.get('/logout')
     .then(response => response.data)
   }
 }

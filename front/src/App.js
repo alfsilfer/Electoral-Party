@@ -6,6 +6,8 @@ import { Switch, Route } from 'react-router-dom';
 import AuthService from './components/auth/auth-services';
 import Navbar from './components/navbar/Navbar';
 import Login from './components/auth/Login';
+// import Map from './components/map/Map'
+
 
 
 class App extends Component {
@@ -50,6 +52,7 @@ class App extends Component {
       return (
         <div className="App">
           <Navbar userInSession={this.state.loggedInUser} />
+          <h1>Welcome electoral Party</h1>
           <Switch>
             <Route exact path='/signup' render={() => <Signup getUser={this.getTheUser}/>}/>
             <Route exact path='/' render={() => <Login getUser={this.getTheUser}/>}/>
